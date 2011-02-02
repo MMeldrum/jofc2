@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<project name="jofc2" default="dist">
+	<property file="build.properties" />
+
+	<property name="dist.standard.jar" value="dist/${build.name}-${build.version}-${build.minor}.jar" />
+	<property name="dist.all.jar" value="dist/${build.name}-${build.version}-${build.minor}-all.jar" />
+	<property name="dist.src.zip" value="dist/${build.name}-${build.version}-${build.minor}-src.zip" />
+	<property name="dist.standard.zip" value="dist/${build.name}-${build.version}-${build.minor}.zip" />
+
+	<tstamp />
+
+	<target name="clean">
+		<delete dir="dist" />
+		<delete dir="bin">
+			<include name="**/*" />
+		</delete>
+		<delete dir="javadoc" />
+	</target>
+
+	<target name="-prepare">
+		<mkdir dir="dist" />
+		<mkdir dir="javadoc" />
+	</target>
+
+	<target name="build">
+		<antcall target="-prepare" />
+		<antcall target="-build-main" />
+	</target>
+
+	<target name="-build-main">
+		<javac srcdir="src" destdir="bin" source="1.5" target="1.5" debug="${debug}" debuglevel="lines,vars,source">
+            <classpath>
+                <fileset dir="lib" includes="**/*.jar" />
+            </classpath>
+        </javac>
+    </target>
+
+
+	<target name="doc">
+        <javadoc sourcepath="src" destdir="javadoc" public="true" windowtitle="jofc2 API" excludepackagenames="${doc.excludes}" defaultexcludes="no" overview="src/overview.html">
+			<link offline="false" href="http://java.sun.com/javase/6/docs/api/" />
+            <classpath>
+                <fileset dir="lib" includes="**/*.jar" />
+            </classpath>
+        </javadoc>
+	</target>
+
+	<target name="dist" depends="build">
+		<antcall target="-standard-jar" />
+		<antcall target="-source-archive" />
+		<antcall target="-standard-archive" />
+	</target>
+
+	<target name="-standard-jar">
+		<jar destfile="${dist.standard.jar}" basedir="bin" compress="true">
+			<manifest>
+				<section name="${build.name}">
+					<attribute name="Built-On" value="${TODAY}" />
+					<attribute name="Version" value="${build.version}-${build.minor}" />
+					<attribute name="URI" value="http://code.google.com/p/jofc2/" />
+				</section>
+				<section name="JSONObject">
+					<attribute name="URI" value="http://www.json.org/" />
+				</section>
+			</manifest>
+		</jar>
+	</target>
+
+
+
+	<target name="-source-archive">
+		<zip destfile="${dist.src.zip}" compress="true">
+			<zipfileset file="LICENSE.txt" />
+			<zipfileset dir="src" />
+		</zip>
+	</target>
+
+	<target name="-standard-archive">
+		<antcall target="doc" />
+		<zip destfile="${dist.standard.zip}" compress="true">
+			<zipfileset dir="javadoc" prefix="doc" />
+			<zipfileset dir="lib" prefix="lib" />
+			<zipfileset file="${dist.src.zip}" />
+			<zipfileset file="LICENSE.txt" />
+			<zipfileset file="${dist.standard.jar}" />
+		</zip>
+	</target>
+</project>

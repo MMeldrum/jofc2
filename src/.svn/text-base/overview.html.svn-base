@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>OFC4J API Documentation</title>
+</head>
+<body>
+<h1>OFC4J API Documentation</h1>
+
+<p>OFC4J is a library that provides an
+    <a href="http://teethgrinder.co.uk/open-flash-chart-2/">Open Flash Chart 2</a>
+    API for the Java language. It works by modeling OFC data structures and then
+    serializing to JSON text.</p>
+
+<p>The best place to start is at the {@link jofc2.model.Chart Chart} class. This
+    class holds all other Chart data and is ultimately what is transformed to send to
+    the OFC widget.</p>
+
+<p>OFC4J should easily integrate with Spring (Chart might be especially good as a
+    prototype-scoped bean) and other Java frameworks. The Gallery application uses Groovy
+    to build the charts. Here is a sample:</p>
+
+<code><pre>
+return new Chart(new Date().toString())
+    .addElements(new FilledBarChart()
+        .setOutlineColour("#577261")
+        .setColour("#E2D66A")
+        .addValues(9, 8, 7, 6, 5, 4, 3, 2, 1))
+    .setBackgroundColour("#FFFFFF");
+</pre></code>
+
+</body>
+</html>

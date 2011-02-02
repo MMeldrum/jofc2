@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/136/trunk/src/jofc2/util
+END
+ShapePointConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/40/trunk/src/jofc2/util/ShapePointConverter.java
+END
+ConverterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/39/trunk/src/jofc2/util/ConverterBase.java
+END
+NullConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/98/trunk/src/jofc2/util/NullConverter.java
+END
+AbstractDotConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/136/trunk/src/jofc2/util/AbstractDotConverter.java
+END
+OnShowConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/98/trunk/src/jofc2/util/OnShowConverter.java
+END
+StackKeyConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/45/trunk/src/jofc2/util/StackKeyConverter.java
+END
+PieChartSliceConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/59/trunk/src/jofc2/util/PieChartSliceConverter.java
+END
+HorizontalBarChartBarConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/51/trunk/src/jofc2/util/HorizontalBarChartBarConverter.java
+END
+TypeDotConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/136/trunk/src/jofc2/util/TypeDotConverter.java
+END
+TooltipTypeConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/54/trunk/src/jofc2/util/TooltipTypeConverter.java
+END
+LineDotConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/136/trunk/src/jofc2/util/LineDotConverter.java
+END
+RotationConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/39/trunk/src/jofc2/util/RotationConverter.java
+END
+ScatterChartPointConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/136/trunk/src/jofc2/util/ScatterChartPointConverter.java
+END
+StackValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/117/trunk/src/jofc2/util/StackValueConverter.java
+END
+BarConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/110/trunk/src/jofc2/util/BarConverter.java
+END

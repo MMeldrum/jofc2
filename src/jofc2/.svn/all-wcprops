@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/153/trunk/src/jofc2
+END
+NullAwareJsonWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/44/trunk/src/jofc2/NullAwareJsonWriter.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/src/jofc2/package-info.java
+END
+OFCException.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/src/jofc2/OFCException.java
+END
+OFC.java
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/136/trunk/src/jofc2/OFC.java
+END
+OFCJSONDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/25/trunk/src/jofc2/OFCJSONDriver.java
+END

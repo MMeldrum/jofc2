@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/127/trunk/src/jofc2/model/axis
+END
+Label.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/16/trunk/src/jofc2/model/axis/Label.java
+END
+XAxisLabels.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/52/trunk/src/jofc2/model/axis/XAxisLabels.java
+END
+YAxisLabels.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/27/trunk/src/jofc2/model/axis/YAxisLabels.java
+END
+RadarAxisLabels.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/127/trunk/src/jofc2/model/axis/RadarAxisLabels.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/11/trunk/src/jofc2/model/axis/package-info.java
+END
+Axis.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/73/trunk/src/jofc2/model/axis/Axis.java
+END
+YLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/54/trunk/src/jofc2/model/axis/YLabel.java
+END
+XAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/11/trunk/src/jofc2/model/axis/XAxis.java
+END
+YAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/56/trunk/src/jofc2/model/axis/YAxis.java
+END
+RadarSpokeLabels.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/127/trunk/src/jofc2/model/axis/RadarSpokeLabels.java
+END
+RadarAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/127/trunk/src/jofc2/model/axis/RadarAxis.java
+END

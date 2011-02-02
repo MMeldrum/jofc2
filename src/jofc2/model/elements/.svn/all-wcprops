@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/136/trunk/src/jofc2/model/elements
+END
+PieChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/135/trunk/src/jofc2/model/elements/PieChart.java
+END
+HorizontalBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/112/trunk/src/jofc2/model/elements/HorizontalBarChart.java
+END
+FilledBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/src/jofc2/model/elements/FilledBarChart.java
+END
+LineChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/136/trunk/src/jofc2/model/elements/LineChart.java
+END
+AbstractDot.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/136/trunk/src/jofc2/model/elements/AbstractDot.java
+END
+ShapeChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/57/trunk/src/jofc2/model/elements/ShapeChart.java
+END
+NullElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/57/trunk/src/jofc2/model/elements/NullElement.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/src/jofc2/model/elements/package-info.java
+END
+StackedBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/135/trunk/src/jofc2/model/elements/StackedBarChart.java
+END
+BarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/110/trunk/src/jofc2/model/elements/BarChart.java
+END
+ScatterChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/136/trunk/src/jofc2/model/elements/ScatterChart.java
+END
+SketchBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/11/trunk/src/jofc2/model/elements/SketchBarChart.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/134/trunk/src/jofc2/model/elements/Element.java
+END
+Tooltip.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/47/trunk/src/jofc2/model/elements/Tooltip.java
+END
+AreaChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/127/trunk/src/jofc2/model/elements/AreaChart.java
+END
+AnimatedElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/98/trunk/src/jofc2/model/elements/AnimatedElement.java
+END
+Legend.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/src/jofc2/model/elements/Legend.java
+END
