@@ -47,10 +47,14 @@ public abstract class AnimatedElement extends Element
     public static class OnShow implements Serializable
     {
         private String type;
+        private Float cascade;
+        private Float delay;
 
         public OnShow(String type)
         {
             this.type = type;
+            this.cascade = 1F;
+            this.delay = 1F;
         }
 
         public String getType()
@@ -61,6 +65,22 @@ public abstract class AnimatedElement extends Element
         public void setType(String type)
         {
             this.type = type;
+        }
+
+        public Float getCascade() {
+            return cascade;
+        }
+
+        public void setCascade(Float cascade) {
+            this.cascade = cascade;
+        }
+
+        public Float getDelay() {
+            return delay;
+        }
+
+        public void setDelay(Float delay) {
+            this.delay = delay;
         }
     }
 }

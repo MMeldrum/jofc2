@@ -26,56 +26,68 @@ import java.util.List;
 public class BarChart extends AnimatedElement {
 
     private static final long serialVersionUID = 6695611795831460343L;
-	private String colour;
+    private String colour;
 
-	public BarChart() {
-		this(Style.NORMAL);
-	}
+    public BarChart() {
+        this(Style.NORMAL);
+    }
 
-	public BarChart(Style style) {
-		super(style.getStyle());
-	}
+    public BarChart(Style style) {
+        super(style.getStyle());
+    }
 
-	protected BarChart(String style) {
-		super(style);
-	}
+    protected BarChart(String style) {
+        super(style);
+    }
 
-	public BarChart addValues(Number... values) {
-		return addValues(Arrays.asList(values));
-	}
+    public BarChart addValues(Number... values) {
+        return addValues(Arrays.asList(values));
+    }
 
-	public BarChart addValues(List<Number> values) {
-		for (Number number : values) {
-			if (number != null) {
-				this.getValues().add(new Bar(number));
-			} else {
-			    this.getValues().add(new NullElement());
-			}
-		}
-		return this;
-	}
+    public BarChart addValues(List<Number> values) {
+        for (Number number : values) {
+            if (number != null) {
+                this.getValues().add(new Bar(number));
+            } else {
+                this.getValues().add(new NullElement());
+            }
+        }
+        return this;
+    }
 
-	public BarChart addBars(Bar... bars) {
-		return addBars(Arrays.asList(bars));
+    public BarChart addBars(Bar... bars) {
+        return addBars(Arrays.asList(bars));
 
-	}
+    }
 
-	public BarChart addBars(List<Bar> bars) {
-		getValues().addAll(bars);
-		return this;
-	}
+    public BarChart addBars(List<Bar> bars) {
+        getValues().addAll(bars);
+        return this;
+    }
 
-	public String getColour() {
-		return colour;
-	}
+    public String getColour() {
+        return colour;
+    }
 
-	public BarChart setColour(String colour) {
-		this.colour = colour;
-		return this;
-	}
+    public BarChart setColour(String colour) {
+        this.colour = colour;
+        return this;
+    }
 
-	public static enum Style {
-		NORMAL("bar"),
+    public OnShow getOnShow() {
+        return super.getOnShow();
+    }
+
+    public void setOnShow(OnShow onShow) {
+        super.setOnShow(onShow);
+    }
+
+    public void useAnimation(boolean state) {
+        super.useAnimation(state);
+    }
+
+    public static enum Style {
+        NORMAL("bar"),
         THREED("bar_3d"),
         GLASS("bar_glass"),
         CYLINDER("bar_cylinder"),
@@ -84,88 +96,89 @@ public class BarChart extends AnimatedElement {
         ROUND("bar_round"),
         DOME("bar_dome");
 
-		private String style;
+        private String style;
 
-		Style(String style) {
-			this.style = style;
-		}
+        Style(String style) {
+            this.style = style;
+        }
 
-		public String getStyle() {
-			return style;
-		}
-	}
+        public String getStyle() {
+            return style;
+        }
+    }
 
-	@Converter(BarConverter.class)
-	public static class Bar implements Serializable {
+    @Converter(BarConverter.class)
+    public static class Bar implements Serializable {
 
-		private Number top;
-		private Number bottom;
-		private String colour;
-		@Alias("tip")
-		private String tooltip;
-		@Alias("on-click")
-		private String onClick;
+        private Number top;
+        private Number bottom;
+        private String colour;
+        @Alias("tip")
+        private String tooltip;
+        @Alias("on-click")
+        private String onClick;
 
-		public String getOnClick() {
-			return onClick;
-		}
+        public String getOnClick() {
+            return onClick;
+        }
 
-		public void setOnClick(String onClick) {
-			this.onClick = onClick;
-		}
+        public void setOnClick(String onClick) {
+            this.onClick = onClick;
+        }
 
-		public Bar(Number top, Number bottom, String colour) {
-			setTop(top);
-			setBottom(bottom);
-			setColour(colour);
-		}
+        public Bar(Number top, Number bottom, String colour) {
+            setTop(top);
+            setBottom(bottom);
+            setColour(colour);
+        }
 
-		public Bar(Number top, Number bottom) {
-			this(top, bottom, null);
-		}
+        public Bar(Number top, Number bottom) {
+            this(top, bottom, null);
+        }
 
-		public Bar(Number top, String colour) {
-			this(top, null, colour);
-		}
+        public Bar(Number top, String colour) {
+            this(top, null, colour);
+        }
 
-		public Bar(Number top) {
-			this(top, null, null);
-		}
+        public Bar(Number top) {
+            this(top, null, null);
+        }
 
-		public Number getTop() {
-			return top;
-		}
+        public Number getTop() {
+            return top;
+        }
 
-		public Bar setTop(Number top) {
-			this.top = top;
-			return this;
-		}
+        public Bar setTop(Number top) {
+            this.top = top;
+            return this;
+        }
 
-		public Number getBottom() {
-			return bottom;
-		}
+        public Number getBottom() {
+            return bottom;
+        }
 
-		public Bar setBottom(Number bottom) {
-			this.bottom = bottom;
-			return this;
-		}
+        public Bar setBottom(Number bottom) {
+            this.bottom = bottom;
+            return this;
+        }
 
-		public String getColour() {
-			return colour;
-		}
+        public String getColour() {
+            return colour;
+        }
 
-		public Bar setColour(String colour) {
-			this.colour = colour;
-			return this;
-		}
+        public Bar setColour(String colour) {
+            this.colour = colour;
+            return this;
+        }
 
-		public String getTooltip() {
-			return tooltip;
-		}
+        public String getTooltip() {
+            return tooltip;
+        }
 
-		public Bar setTooltip(String tooltip) {
-			this.tooltip = tooltip;
-			return this;
-		}
-	}
+        public Bar setTooltip(String tooltip) {
+            this.tooltip = tooltip;
+            return this;
+        }
+
+    }
 }

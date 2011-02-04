@@ -29,5 +29,7 @@ public class OnShowConverter extends ConverterBase<AnimatedElement.OnShow> {
 	@Override
 	public void convert(AnimatedElement.OnShow onShow, PathTrackingWriter writer, MarshallingContext mc) {
 		writeNode(writer, "type", onShow.getType(), true);
+        writeNode(writer, "cascade", onShow.getCascade(), true);
+        writeNode(writer, "delay", onShow.getDelay(), true);
 	}
 }
