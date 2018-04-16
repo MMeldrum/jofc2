@@ -11,10 +11,10 @@ On the long run the idea is to provide a stable and well maintained library for 
 
 # Pentaho joins JOFC2
 Pentaho, one of the leaders in open source BI now joins JOFC2 as active contributors. Pentaho has also integrated JOFC2 in their public continous integration server.
-Just have a look at: http://ci.pentaho.com/job/JOFC2/'>http://ci.pentaho.com/job/JOFC2/
+Just have a look at: http://ci.pentaho.com/job/JOFC2/
 
 # Official Forum online
-We have now our official forum on openflashchart.com. You can reach it here: http://forums.openflashchart.com/viewforum.php?f=18'>http://forums.openflashchart.com/viewforum.php?f=18
+We have now our official forum on openflashchart.com. You can reach it here: http://forums.openflashchart.com/viewforum.php?f=18
 
 # New Release (21.02.2009)
 We just released JOFC1.0-0, we use this release in our commercial product scireum Query Module. Therfore Bar-,Line-, and Pie Charts are well tested. Other Charttypes may have defects. If you experience bugs or miss a feature, just write an issue and we'll try to fix it ASAP.
@@ -25,7 +25,7 @@ If you are interrested in developing JOFC2 just write me an email at mha (at) sc
 
 
 # Alternative Open Flash Chart download with more features
-For those who want to use all features in JOFC2 you should download a JOFC2-Patch Release from DZ. DZ is a very active contributor of OFC2 and implements patches very quick into his release. We (scireum) are using his build. You can download it here: http://www.ofc2dz.com/'>http://www.ofc2dz.com/
+For those who want to use all features in JOFC2 you should download a JOFC2-Patch Release from DZ. DZ is a very active contributor of OFC2 and implements patches very quick into his release. We (scireum) are using his build. You can download it here: http://www.ofc2dz.com/
 
 # New Features
 We are adding new features to the libary.
@@ -34,7 +34,7 @@ Check out the FeaturesPage for the new features in the next Version (Release 31.
 
 # Java Docs online
 We have an online version of the Java Docs (you can also compile them yourself with the buildscript in the release).
-Java Docs: http://jofc2.scireum.de/javadoc/'>http://jofc2.scireum.de/javadoc/
+Java Docs: http://jofc2.scireum.de/javadoc/
 
 # Project
 Spotted a bug or need a feature? Feel free to file an Issue: Issues (You might first want to check that the issue isn't known already ;-)
